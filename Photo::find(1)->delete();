@@ -1,0 +1,29 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#1504
+    [34mall[39m: [
+      [34;4mApp\Models\Photo[39;24m {#6039
+        [34mid[39m: [35m1[39m,
+        [34mtitle[39m: "[32msample1[39m",
+        [34mimage_path[39m: "[32mphotos/gXs5GY7DWCmAkhdOOxrIMuGqsNQCMDcwW1xeb0b0.jpg[39m",
+        [34mprocessed[39m: [35m0[39m,
+        [34mcreated_at[39m: "[32m2026-03-09 05:15:42[39m",
+        [34mupdated_at[39m: "[32m2026-03-09 05:15:42[39m",
+      },
+      [34;4mApp\Models\Photo[39;24m {#6040
+        [34mid[39m: [35m2[39m,
+        [34mtitle[39m: "[32msample1[39m",
+        [34mimage_path[39m: "[32mphotos/e6L2fArUMr60xsi6aKeFoZXCM5k3wVRbO9lTMgf7.jpg[39m",
+        [34mprocessed[39m: [35m0[39m,
+        [34mcreated_at[39m: "[32m2026-03-09 05:17:27[39m",
+        [34mupdated_at[39m: "[32m2026-03-09 05:17:27[39m",
+      },
+      [34;4mApp\Models\Photo[39;24m {#6041
+        [34mid[39m: [35m3[39m,
+        [34mtitle[39m: "[32msample1[39m",
+        [34mimage_path[39m: "[32mphotos/fxJYZX8Xsi8hJoDHaBRaA9bLADjXPUuf54k4r8c8.jpg[39m",
+        [34mprocessed[39m: [35m0[39m,
+        [34mcreated_at[39m: "[32m2026-03-09 05:19:54[39m",
+        [34mupdated_at[39m: "[32m2026-03-09 05:19:54[39m",
+      },
+    ],
+  }
+
