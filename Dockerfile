@@ -17,5 +17,5 @@ RUN chmod -R 777 storage bootstrap/cache database
 
 RUN composer install --no-dev --optimize-autoloader
 
-# ★ 起動時に migrate を実行する（重要）
-CMD php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=8080
+# ★ CMD はシンプルに
+CMD php artisan serve --host=0.0.0.0 --port=8080
