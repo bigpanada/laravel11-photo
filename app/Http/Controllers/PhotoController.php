@@ -22,7 +22,6 @@ class PhotoController extends Controller
     public function store(Request $request)
     {
         $photo = new Photo();
-        $photo->title = $request->title;
 
         // 通常アップロード
         if ($request->hasFile('image')) {
@@ -40,20 +39,20 @@ class PhotoController extends Controller
         }
 
         // 1. タイトルが入力されていればそれを使う
+        
+        // タイトル自動設定ロジック
         if ($request->filled('title')) {
             $photo->title = $request->title;
         } else {
-
-            // 2. ファイル選択の場合（image がファイルとして届く）
             if ($request->hasFile('image')) {
                 $filename = $request->file('image')->getClientOriginalName();
                 $photo->title = pathinfo($filename, PATHINFO_FILENAME);
             } else {
-                // 3. Webカメラ（Base64）の場合
                 $photo->title = 'webcam_' . now()->format('Ymd_His');
             }
         }
-
+ 
+        // 保存
         $photo->save();
 
         // 保存後に C++ removebg を自動実行
