@@ -65,3 +65,8 @@ Route::post('/run-cpp/exec', function () {
         'return_code' => $return_var,
     ]);
 });
+
+Route::get('/debug', function () {
+    \Log::info('Debug route accessed');
+    return 'OK';
+});
