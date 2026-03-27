@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: laravel11-photo
+    env: php
+    plan: free
+    buildCommand: "composer install --no-dev"
+    startCommand: "php artisan serve --host 0.0.0.0 --port 8080"
+    runtime: "php-8.2"
